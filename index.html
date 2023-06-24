@@ -10,7 +10,7 @@
     body {
       font-family: 'Sono', sans-serif;
     }
-
+    /* applies flexbox to the container, height to full height(centres vertically and horizontally) */
     .pricing-container {
       display: flex;
       justify-content: center;
@@ -18,7 +18,8 @@
       height: 100vh;
       gap: 2rem;
     }
-
+    /* flex to 1 sets equal width for all boxes, max width sets how wide the tables are allowed to grow, 
+    padding to keep text inside from the edges */
     .pricing-plan {
       flex: 1;
       max-width: 400px;
@@ -45,7 +46,7 @@
       padding: 0;
       margin: 0;
     }
-
+    /* adds padding to the bottom of the secion */
     .plan-features li {
       margin-bottom: 20px;
     }
@@ -57,7 +58,8 @@
       border-radius: 5px;
       border: none;
     }
-
+    /* applies column direction to the flex box when under 1250px, because there is more content 
+    than the viewport height, therefore it is better to set it as a percentage */
     @media (max-width: 1250px) {
       .pricing-container {
         flex-direction: column;
